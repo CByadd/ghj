@@ -13,7 +13,7 @@ const ExternalLink = ({ youtube, wikipedia }: ExternalLinks) => {
         theme === "dark" ? " text-text_primary" : "text-text_secondary"
       }`}
     >
-      <motion.div
+      {/* <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.25, ease: "easeInOut", delay: 0.4 }}
@@ -36,7 +36,7 @@ const ExternalLink = ({ youtube, wikipedia }: ExternalLinks) => {
         <Link target="__blank" href={youtube}>
           <BsYoutube className="text-lg" />
         </Link>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

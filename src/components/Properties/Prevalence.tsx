@@ -31,13 +31,13 @@ const Prevalence = ({
   };
   return (
     <div
-      className={`w-full flex flex-col justify-start items-start p-4 ${
-        theme === "dark"
-          ? "text-text_primary bg-bg_dark"
-          : "bg-bg_light text-text_secondary"
-      } shadow-lg rounded-sm bg-opacity-60 backdrop-blur-require`}
+      // className={`w-full flex flex-col justify-start items-start p-4 ${
+      //   theme === "dark"
+      //     ? "text-text_primary bg-bg_dark"
+      //     : "bg-bg_light text-text_secondary"
+      // } shadow-lg rounded-sm bg-opacity-60 backdrop-blur-require`}
     >
-      <h1 className="text-xl">Prevalence</h1>
+      {/* <h1 className="text-xl">Prevalence</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {universe && (
           <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
@@ -214,8 +214,8 @@ const Prevalence = ({
               </button>
             </div>
           </div>
-        )}
-      </div>
+        )} */}
+      {/* </div> */}
     </div>
   );
 };

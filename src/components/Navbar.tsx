@@ -5,7 +5,11 @@ import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import { AiFillGithub } from "react-icons/ai";
 import { FiSun } from "react-icons/fi";
 import { PiMoonStarsBold } from "react-icons/pi";
+
+
+
 import { LiaAtomSolid } from "react-icons/lia";
+
 
 const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
@@ -22,11 +26,16 @@ const Navbar = () => {
       </Link>
       <div className="flex justify-end items-center">
         <Link
-          href="https://github.com/psykat1116/Modern_Periodic_Table"
+          href="https://www.instagram.com/srinivash_cb/"
           target="_blank"
           className="mr-5"
         >
-          <AiFillGithub className="text-2xl" />
+          {/* <AiFillGithub className="text-2xl"  /> */}
+    
+          
+          <h1 className="logos">Srinivash</h1>
+          
+          
         </Link>
         {theme === "dark" ? (
           <button

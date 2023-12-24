@@ -12,6 +12,32 @@
   width: 0px;
 }
 
+
+
+
+
+.logos{
+  color: white;
+  font-size: 35px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+ html{
+  height: auto;
+  overflow-x: hidden;
+ }
+
+  .maio{
+    width: 130vh;
+    height: 100%;
+    
+  }
+
+ 
+}
+
 /* *::-webkit-scrollbar-track {
   width: 10px;
   background: #0f0f0f;

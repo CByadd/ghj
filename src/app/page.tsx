@@ -13,7 +13,8 @@ export default function Home() {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <>
-      <motion.div
+    <div className="main">
+    <motion.div
         className={`fixed min-h-screen w-full flex justify-center items-center flex-col z-50 origin-top ${
           theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
         }`}
@@ -24,18 +25,20 @@ export default function Home() {
         <Loader />
       </motion.div>
       <div
-        className={`min-h-screen w-full font-poppins ${
+        className={` maio  min-h-screen w-max lg:w-[100%] font-poppins ${
           theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
         } flex flex-col justify-start items-center`}
       >
         <Navbar />
         <Slider />
-        <div className="min-w-[80%] flex flex-col justify-start items-center my-10 overflow-x-scroll">
+        <div className="sm:w-100% lg:min-w-[80%] flex flex-col justify-start items-center my-10 overflow-x-scroll">
           <UpperTable />
           <LowerTable />
           <Categories />
         </div>
       </div>
+    </div>
+     
     </>
   );
 }

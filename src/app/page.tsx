@@ -25,7 +25,9 @@ export default function Home() {
         <Loader />
       </motion.div>
       <div
+
         className={` maio  min-h-screen w-max lg:w-[100%] font-poppins ${
+
           theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
         } flex flex-col justify-start items-center`}
       >
